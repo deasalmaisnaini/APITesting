@@ -49,8 +49,11 @@ Proyek ini dikembangkan dan dikelola oleh kontributor berikut:
 
 ## Alat dan Teknologi
 
+## Alat dan Teknologi
+
 Alat yang digunakan dalam proyek ini meliputi:
-- ![Java 11 Logo](https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png)
-- ![Maven Logo](https://maven.apache.org/images/maven-logo-black-on-white.png)
-- ![TestNG Logo](https://testng.org/img/testng-logo.png)
+
+- [![Java 11](https://img.shields.io/badge/Java-11-red)](https://www.java.com/)
+- [![Maven](https://img.shields.io/badge/Maven-Latest-blue)](https://maven.apache.org/)
+- [![TestNG](https://img.shields.io/badge/TestNG-Latest-green)](https://testng.org/)
 
