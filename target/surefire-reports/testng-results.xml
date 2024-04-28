@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-28T12:26:19Z" name="Suite" finished-at="2024-04-28T12:26:42Z" duration-ms="23276">
+    <groups>
+    </groups>
+    <test started-at="2024-04-28T12:26:19Z" name="Test" finished-at="2024-04-28T12:26:42Z" duration-ms="23276">
+      <class name="APITest.AppTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:APITest.AppTest@3ed03652]" started-at="2024-04-28T12:26:19Z" name="setup" finished-at="2024-04-28T12:26:25Z" duration-ms="5613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreateUserWithInvalidAppId()[pri:0, instance:APITest.AppTest@3ed03652]" started-at="2024-04-28T12:26:25Z" name="testCreateUserWithInvalidAppId" finished-at="2024-04-28T12:26:41Z" duration-ms="16370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithInvalidAppId -->
+        <test-method signature="testCreateUserWithoutAppId()[pri:0, instance:APITest.AppTest@3ed03652]" started-at="2024-04-28T12:26:42Z" name="testCreateUserWithoutAppId" finished-at="2024-04-28T12:26:42Z" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateUserWithoutAppId -->
+      </class> <!-- APITest.AppTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
