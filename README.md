@@ -49,8 +49,6 @@ Proyek ini dikembangkan dan dikelola oleh kontributor berikut:
 
 ## Alat dan Teknologi
 
-## Alat dan Teknologi
-
 Alat yang digunakan dalam proyek ini meliputi:
 
 - [![Java 11](https://img.shields.io/badge/Java-11-red)](https://www.java.com/)
