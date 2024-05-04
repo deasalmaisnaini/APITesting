@@ -4,6 +4,8 @@
     <test name="Test">
         <classes>
             <class name="APITest.AppTest"/>
+            <class name="APITest.AppTestGet" />
+            <class name="APITest.AppTestDelete" /> 
         </classes>
     </test>
 </suite>
