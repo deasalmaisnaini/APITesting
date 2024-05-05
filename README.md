@@ -39,7 +39,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut:
 Untuk menjalankan pengujian terhadap Dummy API, ikuti langkah-langkah berikut:
 
 1. Buka terminal atau command prompt, dan navigasi ke direktori proyek.
-2. Ubah app-id pada file test menggunakan app-id yang diperoleh dari web DummyAPI
+2. Ubah app-id pada file test menggunakan app-id yang diperoleh dari web DummyAPI.
 3. Jalankan perintah Maven berikut untuk menjalankan semua kasus pengujian: `mvn test`
 4. Setelah pengujian berhasil dieksekusi, Anda dapat melihat laporan pengujian di direktori `target/surefire-reports`.
 
@@ -52,7 +52,7 @@ Pengujian API menggunakan Rest Assured melibatkan tiga konsep utama:
 
 Contoh skrip pengujian dengan Rest Assured:
 
-```java
+\```java
 given()
     .header("Content-Type", "application/json")
     .body("{ \"key\": \"value\" }")
@@ -60,7 +60,8 @@ given()
     .post("/api/endpoint")
 .then()
     .statusCode(200)
-    .body("status", equalTo("success")); ```
+    .body("status", equalTo("success")); 
+\```
 
 ## Laporan Pengujian
 
@@ -87,3 +88,41 @@ Alat yang digunakan dalam proyek ini meliputi:
 - [![Java 11](https://img.shields.io/badge/Java-11-red)](https://www.java.com/)
 - [![Maven](https://img.shields.io/badge/Maven-Latest-blue)](https://maven.apache.org/)
 - [![TestNG](https://img.shields.io/badge/TestNG-Latest-green)](https://testng.org/)
+
+## Dependensi Proyek
+\```xml
+<dependencies>
+    <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>5.4.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.14.3</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.5</version>
+    </dependency>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.7.5</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.9.19</version>
+    </dependency>
+</dependencies>
+\```
