@@ -17,8 +17,11 @@ Selamat datang di Proyek Pengujian API kami! Proyek ini difokuskan pada pengujia
 Proyek kami bertujuan untuk melakukan pengujian terhadap website Dummy API. Kami menggunakan Java 11 untuk menulis skrip otomasi pengujian, Maven untuk mengelola dependensi dan membangun proyek, serta TestNG sebagai kerangka pengujian untuk menjalankan pengujian terhadap berbagai endpoint API.
 
 ### Struktur Proyek
-- `src/test/java`: Berisi kelas-kelas pengujian yang ditulis dengan TestNG untuk pengujian API.
-- `pom.xml`: Berkas konfigurasi proyek Maven.
+- `pom.xml` adalah file konfigurasi Maven yang mengelola dependensi dan build proyek.
+- `src/main/java` adalah direktori tempat kode sumber utama proyek berada.
+- `src/main/resources` adalah direktori untuk menyimpan berkas sumber daya proyek, misalnya konfigurasi.
+- `src/test/java` adalah direktori tempat kode sumber untuk pengujian berada.
+- `src/test/resources` adalah direktori untuk menyimpan berkas sumber daya yang digunakan dalam pengujian.
 
 ## Memulai
 
@@ -57,7 +60,7 @@ given()
     .post("/api/endpoint")
 .then()
     .statusCode(200)
-    .body("status", equalTo("success"));
+    .body("status", equalTo("success")); ```
 
 ## Laporan Pengujian
 
