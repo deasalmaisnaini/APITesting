@@ -52,7 +52,7 @@ Pengujian API menggunakan Rest Assured melibatkan tiga konsep utama:
 
 Contoh skrip pengujian dengan Rest Assured:
 
-\```java
+```java
 given()
     .header("Content-Type", "application/json")
     .body("{ \"key\": \"value\" }")
@@ -61,7 +61,7 @@ given()
 .then()
     .statusCode(200)
     .body("status", equalTo("success")); 
-\```
+```
 
 ## Laporan Pengujian
 
@@ -90,7 +90,7 @@ Alat yang digunakan dalam proyek ini meliputi:
 - [![TestNG](https://img.shields.io/badge/TestNG-Latest-green)](https://testng.org/)
 
 ## Dependensi Proyek
-\```xml
+```xml
 <dependencies>
     <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
     <dependency>
@@ -125,4 +125,4 @@ Alat yang digunakan dalam proyek ini meliputi:
         <version>1.9.19</version>
     </dependency>
 </dependencies>
-\```
+```
