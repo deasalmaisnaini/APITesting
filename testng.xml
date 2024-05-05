@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="false">
     <test name="Test">
         <classes>
-            <class name="APITest.AppTest"/>
+            <class name="APITest.AppTestUpdate"/>
             <class name="APITest.AppTestGet" />
             <class name="APITest.AppTestDelete" /> 
         </classes>
