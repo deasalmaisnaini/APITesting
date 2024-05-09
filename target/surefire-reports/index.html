@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>D:\Semester 6\Pengujian Perangkat Lunak\API Test\RESTAssurredAuotomation\testng.xml</span>
+                    <span>C:\Users\Asus\OneDrive\Documents\SEMESTER 6\PPL\APITesting\APITesting\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">20 methods, 5 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestCreate" class="method navigator-link" hash-for-method="testCreateNonExistingUser">testCreateNonExistingUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestCreate" class="method navigator-link" hash-for-method="testCreateUserWithLastNameAsNumber">testCreateUserWithLastNameAsNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestDelete" class="method navigator-link" hash-for-method="testDeleteUserWithValidAuthorization">testDeleteUserWithValidAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestUpdate" class="method navigator-link" hash-for-method="testUpdateUserFirstNameInvalid">testUpdateUserFirstNameInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestUpdate" class="method navigator-link" hash-for-method="testUpdateUserRegisterDate">testUpdateUserRegisterDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +136,77 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="APITest.AppTest" class="method navigator-link" hash-for-method="testCreateUserWithInvalidAppId">testCreateUserWithInvalidAppId</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestCreate" class="method navigator-link" hash-for-method="testCreateUserWithInvalidAppId">testCreateUserWithInvalidAppId</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="APITest.AppTest" class="method navigator-link" hash-for-method="testCreateUserWithoutAppId">testCreateUserWithoutAppId</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestCreate" class="method navigator-link" hash-for-method="testCreateUserWithInvalidDateOfBirthFormat">testCreateUserWithInvalidDateOfBirthFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestCreate" class="method navigator-link" hash-for-method="testCreateUserWithoutAppId">testCreateUserWithoutAppId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestDelete" class="method navigator-link" hash-for-method="testDeleteUserWithDeletedUserId">testDeleteUserWithDeletedUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestDelete" class="method navigator-link" hash-for-method="testDeleteUserWithInvalidAppId">testDeleteUserWithInvalidAppId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestDelete" class="method navigator-link" hash-for-method="testDeleteUserWithNonExistentUserId">testDeleteUserWithNonExistentUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestDelete" class="method navigator-link" hash-for-method="testDeleteUserWithoutAuthorization">testDeleteUserWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestGet" class="method navigator-link" hash-for-method="testGetUserByIdWithInvalidAppId">testGetUserByIdWithInvalidAppId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestGet" class="method navigator-link" hash-for-method="testGetUserByIdWithInvalidUserId">testGetUserByIdWithInvalidUserId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestGet" class="method navigator-link" hash-for-method="testGetUserByIdWithInvalidUserIdFormat">testGetUserByIdWithInvalidUserIdFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestGet" class="method navigator-link" hash-for-method="testGetUserByIdWithValidAuthorization">testGetUserByIdWithValidAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestGet" class="method navigator-link" hash-for-method="testGetUserByIdWithoutAuthorization">testGetUserByIdWithoutAuthorization</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestUpdate" class="method navigator-link" hash-for-method="testUpdateUserFirstNameValid">testUpdateUserFirstNameValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestUpdate" class="method navigator-link" hash-for-method="testUpdateUserLastNameValid">testUpdateUserLastNameValid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="APITest.AppTestUpdate" class="method navigator-link" hash-for-method="testUpdateUserTitleValid">testUpdateUserTitleValid</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -122,10 +221,224 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.AppTestCreate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateNonExistingUser">
+                  </a> <!-- testCreateNonExistingUser -->
+                  <span class="method-name">testCreateNonExistingUser</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at APITest.AppTestCreate.testCreateNonExistingUser(AppTestCreate.java:76)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateUserWithLastNameAsNumber">
+                  </a> <!-- testCreateUserWithLastNameAsNumber -->
+                  <span class="method-name">testCreateUserWithLastNameAsNumber</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+JSON path error doesn&apos;t match.
+Expected: Bad Request
+  Actual: BODY_NOT_VALID
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at APITest.AppTestCreate.testCreateUserWithLastNameAsNumber(AppTestCreate.java:105)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.AppTestDelete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserWithValidAuthorization">
+                  </a> <!-- testDeleteUserWithValidAuthorization -->
+                  <span class="method-name">testDeleteUserWithValidAuthorization</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;404&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at APITest.AppTestDelete.testDeleteUserWithValidAuthorization(AppTestDelete.java:89)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">APITest.AppTestUpdate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserFirstNameInvalid">
+                  </a> <!-- testUpdateUserFirstNameInvalid -->
+                  <span class="method-name">testUpdateUserFirstNameInvalid</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at APITest.AppTestUpdate.testUpdateUserFirstNameInvalid(AppTestUpdate.java:85)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserRegisterDate">
+                  </a> <!-- testUpdateUserRegisterDate -->
+                  <span class="method-name">testUpdateUserRegisterDate</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at APITest.AppTestUpdate.testUpdateUserRegisterDate(AppTestUpdate.java:71)
+... Removed 39 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">APITest.AppTest</span>
+              <span class="class-name">APITest.AppTestGet</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByIdWithInvalidAppId">
+                  </a> <!-- testGetUserByIdWithInvalidAppId -->
+                  <span class="method-name">testGetUserByIdWithInvalidAppId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByIdWithInvalidUserId">
+                  </a> <!-- testGetUserByIdWithInvalidUserId -->
+                  <span class="method-name">testGetUserByIdWithInvalidUserId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByIdWithInvalidUserIdFormat">
+                  </a> <!-- testGetUserByIdWithInvalidUserIdFormat -->
+                  <span class="method-name">testGetUserByIdWithInvalidUserIdFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByIdWithValidAuthorization">
+                  </a> <!-- testGetUserByIdWithValidAuthorization -->
+                  <span class="method-name">testGetUserByIdWithValidAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetUserByIdWithoutAuthorization">
+                  </a> <!-- testGetUserByIdWithoutAuthorization -->
+                  <span class="method-name">testGetUserByIdWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.AppTestCreate</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -137,6 +450,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testCreateUserWithInvalidDateOfBirthFormat">
+                  </a> <!-- testCreateUserWithInvalidDateOfBirthFormat -->
+                  <span class="method-name">testCreateUserWithInvalidDateOfBirthFormat</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testCreateUserWithoutAppId">
                   </a> <!-- testCreateUserWithoutAppId -->
                   <span class="method-name">testCreateUserWithoutAppId</span>
@@ -144,10 +464,75 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.AppTestDelete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserWithDeletedUserId">
+                  </a> <!-- testDeleteUserWithDeletedUserId -->
+                  <span class="method-name">testDeleteUserWithDeletedUserId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserWithInvalidAppId">
+                  </a> <!-- testDeleteUserWithInvalidAppId -->
+                  <span class="method-name">testDeleteUserWithInvalidAppId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserWithNonExistentUserId">
+                  </a> <!-- testDeleteUserWithNonExistentUserId -->
+                  <span class="method-name">testDeleteUserWithNonExistentUserId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteUserWithoutAuthorization">
+                  </a> <!-- testDeleteUserWithoutAuthorization -->
+                  <span class="method-name">testDeleteUserWithoutAuthorization</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">APITest.AppTestUpdate</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserFirstNameValid">
+                  </a> <!-- testUpdateUserFirstNameValid -->
+                  <span class="method-name">testUpdateUserFirstNameValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserLastNameValid">
+                  </a> <!-- testUpdateUserLastNameValid -->
+                  <span class="method-name">testUpdateUserLastNameValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateUserTitleValid">
+                  </a> <!-- testUpdateUserTitleValid -->
+                  <span class="method-name">testUpdateUserTitleValid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Semester 6\Pengujian Perangkat Lunak\API Test\RESTAssurredAuotomation\testng.xml</span>
+            <span class="header-content">C:\Users\Asus\OneDrive\Documents\SEMESTER 6\PPL\APITesting\APITesting\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -156,7 +541,10 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;APITest.AppTest&quot;/&gt;
+      &lt;class name=&quot;APITest.AppTestUpdate&quot;/&gt;
+      &lt;class name=&quot;APITest.AppTestGet&quot;/&gt;
+      &lt;class name=&quot;APITest.AppTestDelete&quot;/&gt;
+      &lt;class name=&quot;APITest.AppTestCreate&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -170,7 +558,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -196,20 +584,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCreateUserWithInvalidAppId')
-data.setCell(0, 2, 'APITest.AppTest')
-data.setCell(0, 3, 16370);
+data.setCell(0, 1, 'testUpdateUserFirstNameInvalid')
+data.setCell(0, 2, 'APITest.AppTestUpdate')
+data.setCell(0, 3, 6430);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCreateUserWithoutAppId')
-data.setCell(1, 2, 'APITest.AppTest')
-data.setCell(1, 3, 531);
+data.setCell(1, 1, 'testUpdateUserFirstNameValid')
+data.setCell(1, 2, 'APITest.AppTestUpdate')
+data.setCell(1, 3, 4689);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCreateUserWithLastNameAsNumber')
+data.setCell(2, 2, 'APITest.AppTestCreate')
+data.setCell(2, 3, 1609);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCreateNonExistingUser')
+data.setCell(3, 2, 'APITest.AppTestCreate')
+data.setCell(3, 3, 681);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCreateUserWithInvalidDateOfBirthFormat')
+data.setCell(4, 2, 'APITest.AppTestCreate')
+data.setCell(4, 3, 631);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGetUserByIdWithInvalidUserId')
+data.setCell(5, 2, 'APITest.AppTestGet')
+data.setCell(5, 3, 554);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testUpdateUserLastNameValid')
+data.setCell(6, 2, 'APITest.AppTestUpdate')
+data.setCell(6, 3, 503);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGetUserByIdWithInvalidAppId')
+data.setCell(7, 2, 'APITest.AppTestGet')
+data.setCell(7, 3, 451);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testUpdateUserRegisterDate')
+data.setCell(8, 2, 'APITest.AppTestUpdate')
+data.setCell(8, 3, 429);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCreateUserWithInvalidAppId')
+data.setCell(9, 2, 'APITest.AppTestCreate')
+data.setCell(9, 3, 422);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testDeleteUserWithNonExistentUserId')
+data.setCell(10, 2, 'APITest.AppTestDelete')
+data.setCell(10, 3, 406);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testUpdateUserTitleValid')
+data.setCell(11, 2, 'APITest.AppTestUpdate')
+data.setCell(11, 3, 403);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testGetUserByIdWithInvalidUserIdFormat')
+data.setCell(12, 2, 'APITest.AppTestGet')
+data.setCell(12, 3, 395);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testDeleteUserWithValidAuthorization')
+data.setCell(13, 2, 'APITest.AppTestDelete')
+data.setCell(13, 3, 383);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testDeleteUserWithDeletedUserId')
+data.setCell(14, 2, 'APITest.AppTestDelete')
+data.setCell(14, 3, 376);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCreateUserWithoutAppId')
+data.setCell(15, 2, 'APITest.AppTestCreate')
+data.setCell(15, 3, 374);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testGetUserByIdWithoutAuthorization')
+data.setCell(16, 2, 'APITest.AppTestGet')
+data.setCell(16, 3, 350);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDeleteUserWithoutAuthorization')
+data.setCell(17, 2, 'APITest.AppTestDelete')
+data.setCell(17, 3, 345);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testGetUserByIdWithValidAuthorization')
+data.setCell(18, 2, 'APITest.AppTestGet')
+data.setCell(18, 3, 340);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testDeleteUserWithInvalidAppId')
+data.setCell(19, 2, 'APITest.AppTestDelete')
+data.setCell(19, 3, 335);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 20 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -235,18 +695,141 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">APITest.AppTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">APITest.AppTestUpdate</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateUserFirstNameInvalid</span>
+                <span class="method-start">2822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserFirstNameValid</span>
+                <span class="method-start">9783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserLastNameValid</span>
+                <span class="method-start">14488 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testUpdateUserRegisterDate</span>
+                <span class="method-start">15006 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testUpdateUserTitleValid</span>
+                <span class="method-start">15448 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.AppTestGet</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">15977 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByIdWithInvalidAppId</span>
+                <span class="method-start">15977 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">verifyDatabaseUnchanged</span>
+                <span class="method-start">16428 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByIdWithInvalidUserId</span>
+                <span class="method-start">16460 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">verifyDatabaseUnchanged</span>
+                <span class="method-start">17020 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByIdWithInvalidUserIdFormat</span>
+                <span class="method-start">17025 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">verifyDatabaseUnchanged</span>
+                <span class="method-start">17436 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByIdWithValidAuthorization</span>
+                <span class="method-start">17436 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">verifyDatabaseUnchanged</span>
+                <span class="method-start">17778 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetUserByIdWithoutAuthorization</span>
+                <span class="method-start">17781 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">verifyDatabaseUnchanged</span>
+                <span class="method-start">18131 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.AppTestDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">18146 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserWithDeletedUserId</span>
+                <span class="method-start">18146 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserWithInvalidAppId</span>
+                <span class="method-start">18525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserWithNonExistentUserId</span>
+                <span class="method-start">18876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDeleteUserWithValidAuthorization</span>
+                <span class="method-start">19295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDeleteUserWithoutAuthorization</span>
+                <span class="method-start">19684 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">APITest.AppTestCreate</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">20029 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCreateNonExistingUser</span>
+                <span class="method-start">20029 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">testCreateUserWithInvalidAppId</span>
-                <span class="method-start">5688 ms</span>
+                <span class="method-start">20726 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCreateUserWithInvalidDateOfBirthFormat</span>
+                <span class="method-start">21257 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCreateUserWithLastNameAsNumber</span>
+                <span class="method-start">21896 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreateUserWithoutAppId</span>
-                <span class="method-start">22601 ms</span>
+                <span class="method-start">23740 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

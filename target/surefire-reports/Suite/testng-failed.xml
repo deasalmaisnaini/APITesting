@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="APITest.AppTestCreate">
+        <methods>
+          <include name="setup"/>
+          <include name="testCreateUserWithLastNameAsNumber"/>
+          <include name="testCreateNonExistingUser"/>
+        </methods>
+      </class> <!-- APITest.AppTestCreate -->
+      <class name="APITest.AppTestDelete">
+        <methods>
+          <include name="testDeleteUserWithValidAuthorization"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- APITest.AppTestDelete -->
+      <class name="APITest.AppTestUpdate">
+        <methods>
+          <include name="testUpdateUserRegisterDate"/>
+          <include name="testUpdateUserFirstNameInvalid"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- APITest.AppTestUpdate -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

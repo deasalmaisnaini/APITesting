@@ -6,6 +6,7 @@
             <class name="APITest.AppTestUpdate"/>
             <class name="APITest.AppTestGet" />
             <class name="APITest.AppTestDelete" /> 
+            <class name="APITest.AppTestCreate" /> 
         </classes>
     </test>
 </suite>
